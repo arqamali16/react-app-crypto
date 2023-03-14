@@ -1,0 +1,61 @@
+$font: "Red Hat Display", sans-serif;
+$primary-color: #49cd5e !default;
+$primary-natural-color: #eeeeee;
+$natural-color: #9c9c9c !default;
+$font-size: 13px;
+$font-weight: 400;
+$row-height: 3.5rem;
+
+.table {
+  font-family: $font;
+  border-collapse: collapse;
+  width: 100%;
+  border: none;
+  font-size: $font-size !important;
+
+  td,
+  th {
+    text-align: left;
+    padding: 8px;
+    font-family: $font;
+    font-weight: $font-weight;
+  }
+
+  tr:nth-child(odd) {
+    background-color: $primary-natural-color;
+  }
+
+  tr:not(:first-child) {
+    height: $row-height;
+  }
+
+  td:not(:first-child)::before,
+  th:not(:first-child)::before {
+    position: absolute;
+    width: 1px;
+    height: 1.2em;
+    background-color: $primary-natural-color;
+    transition: background-color 0.2s;
+    content: "";
+    margin: 0 0 0 -15px;
+  }
+
+  td:first-child,
+  th:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+  td:last-child,
+  th:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .no-data-row {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .table-header {
+    cursor: pointer;
+  }
+}

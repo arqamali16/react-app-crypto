@@ -1,0 +1,114 @@
+@use "../../Styles/mixin.scss";
+
+$font: "Red Hat Display", sans-serif;
+$primary-color: #49cd5e !default;
+$secondary-color: #223cc7;
+$hover-color: #b5d9bb;
+$primary-natural-color: #eeeeee;
+$natural-color: #9c9c9c !default;
+$font-size: 13px;
+$font-weight: 400;
+$row-height: 3.5rem;
+
+.ant-select-selection-item {
+  line-height: 32px !important;
+}
+
+.select-options .ant-select-item-option-content,
+.ant-select-selection-item {
+  display: flex;
+  padding: 0.5em;
+  align-items: center;
+  column-gap: 0.5em;
+}
+
+.select-options {
+  border-bottom: 1px solid #f2f2f2 !important;
+  border-radius: 0 !important;
+}
+
+.ant-select-dropdown {
+  padding: 0 !important;
+}
+
+.ant-select-item-option-selected {
+  background-color: #eeeeee !important;
+}
+
+.ant-input-number-input-wrap,
+.ant-input-number-input {
+  height: 100% !important;
+}
+
+.ant-input-number-affix-wrapper {
+  color: rgba(0, 0, 0, 0.88) !important;
+}
+
+.ant-input-number-affix-wrapper-disabled {
+  background-color: #ffff !important;
+
+  .ant-input-number-input {
+    background-color: #ffff !important;
+  }
+}
+
+.table-title {
+  padding: 2em 12em 1em 12em;
+  margin: 0 !important;
+}
+
+.ant-picker-date-panel {
+  width: fit-content;
+}
+
+.section-wrapper {
+  @include mixin.xs {
+    display: none;
+  }
+
+  @include mixin.sm {
+    display: none;
+  }
+
+  @include mixin.md {
+    display: inline;
+  }
+}
+
+.mobile-section-wrapper {
+  @include mixin.sm {
+    display: inline !important;
+  }
+
+  @include mixin.md {
+    display: none !important;
+  }
+}
+
+.ant-btn-primary:not(:disabled):hover {
+  background-color: $secondary-color;
+}
+
+.ant-select-selector:hover,
+.ant-input-number-input :hover,
+.ant-select:hover,
+.ant-input-number:hover,
+.ant-picker:hover {
+  border-color: $hover-color !important;
+}
+
+.ant-select-selector:focus,
+.ant-input-number-input :focus,
+.ant-select:focus,
+.ant-select-selector:focus,
+.ant-input-number:focus,
+.ant-picker:focus {
+  border-color: #49cd5e !important;
+}
+
+.ant-input-number-focused:focus,
+.ant-select-selector-focused,
+.ant-picker-focused,
+.ant-input-number-focused {
+  border-color: #49cd5e !important;
+}

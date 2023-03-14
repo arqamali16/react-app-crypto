@@ -1,0 +1,115 @@
+@use "../../Styles/mixin.scss";
+
+$font: "Red Hat Display", sans-serif;
+
+.filter-form-wrapper {
+  .ant-btn-default {
+    border-color: #1b31a8 !important;
+    color: #1b31a8 !important;
+  }
+
+  .ant-picker-input > input,
+  .ant-select-selector,
+  .ant-btn-default {
+    font-family: $font !important;
+  }
+
+  .ant-picker {
+    width: 100% !important;
+  }
+
+  @include mixin.xs {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  @include mixin.sm {
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
+
+  @include mixin.md {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  @include mixin.lg {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+
+  @include mixin.xl {
+    padding-left: 14em;
+    padding-right: 14em;
+  }
+
+  .ant-form {
+    width: 60%;
+    @include mixin.xs {
+      width: 80%;
+      column-gap: 0.8em;
+    }
+
+    @include mixin.sm {
+      width: 80%;
+      column-gap: 0.8em;
+    }
+
+    @include mixin.md {
+      flex-direction: row;
+      width: 80%;
+      column-gap: 0.8em;
+    }
+
+    @include mixin.lg {
+      width: 90%;
+    }
+
+    @include mixin.xl {
+      width: 70%;
+    }
+  }
+
+  .ant-btn-default {
+    width: 100%;
+  }
+
+  .align-button {
+    margin-inline-end: 0;
+  }
+
+  .ant-form-item {
+    @include mixin.xs {
+      flex: 1 0 10%;
+    }
+
+    @include mixin.sm {
+      flex: 1 0 10%;
+    }
+
+    @include mixin.md {
+      flex: 1 0 10%;
+    }
+
+    @include mixin.lg {
+      flex: none;
+    }
+  }
+}
+
+.ant-picker-cell-today {
+  .ant-picker-cell-inner::before {
+    border-color: #000 !important;
+  }
+}
+
+.ant-picker-cell-selected {
+  .ant-picker-cell-inner::before {
+    border-color: #000 !important;
+  }
+
+  .ant-picker-cell-inner {
+    border-color: #000 !important;
+    background: #000 !important;
+  }
+}

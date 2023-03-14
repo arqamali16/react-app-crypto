@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+input,
+select {
+  width: calc(100% - 22px);
+  height: 35px;
+  border: 1px solid #e0e0e0;
+  padding: 0 !important;
+  border-radius: 8px;
+  padding: 0 11px !important;
+}
+
+label {
+  font-size: 14px;
+  color: #9c9c9c;
+}
+
+form {
+  display: flex;
+  column-gap: 2em;
+  text-align: left;
+  width: 100%;
+}
+
+.form-item {
+  flex: 1 0 18%;
+}
+
+.equal-sign {
+  font-weight: 400;
+}
+
+.form-title {
+  text-align: left;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+input:focus-visible {
+  box-shadow: 0 0 0 2px rgb(5 145 255 / 10%);
+  border-inline-end-width: 1px;
+  outline: 0;
+  border-color: #4096ff;
+}
+
+.ant-form-item-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-form-item-label {
+  text-align: left !important;
+  font-family: "Red Hat Display", sans-serif !important;
+}
+
+.align-button {
+  display: flex;
+  flex-direction: column-reverse;
+}

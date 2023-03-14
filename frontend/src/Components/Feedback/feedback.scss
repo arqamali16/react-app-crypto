@@ -1,0 +1,22 @@
+$primary-color: #49cd5e !default;
+
+.feedback-wrapper {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: $primary-color;
+  height: 3em;
+  text-align: center;
+  color: #fff;
+  display: none;
+
+  span {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.display-none {
+  display: none !important;
+}

@@ -1,0 +1,54 @@
+$font: "Red Hat Display", sans-serif;
+$primary-color: #49cd5e !default;
+$secondary-color: #223cc7;
+$primary-natural-color: #eeeeee;
+$natural-color: #9c9c9c !default;
+$font-size: 14px;
+$font-weight: 400;
+$row-height: 3.5rem;
+
+.rate-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  padding: 2.5em 2.5em;
+}
+
+.dot {
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.color-secondary {
+  background-color: $secondary-color;
+}
+.color-primary {
+  background-color: $primary-color;
+}
+
+.list-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: $font-size;
+  font-weight: 500;
+}
+
+.rate-list-item .ant-card-body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+  background-color: #f9f9f9;
+  border-color: #eff0f6;
+  border-radius: 12px;
+}
+
+.load-next {
+  text-align: center;
+  font-weight: 500;
+  font-family: $font;
+  cursor: pointer;
+}

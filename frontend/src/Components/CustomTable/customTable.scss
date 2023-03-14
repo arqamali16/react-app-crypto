@@ -1,0 +1,61 @@
+@use "../../Styles/mixin.scss";
+
+.table-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 14em;
+  display: flex;
+  row-gap: 2em;
+
+  .ant-pagination {
+    align-self: baseline;
+  }
+  @include mixin.md {
+    padding: 1em 3em !important;
+  }
+
+  @include mixin.lg {
+    padding: 2em 10em !important;
+  }
+
+  @include mixin.xl {
+    padding: 2em 14em !important;
+  }
+}
+
+.table-title {
+  @include mixin.xs {
+    padding-left: 1.5em !important;
+    padding-right: 12em !important;
+  }
+
+  @include mixin.sm {
+    padding-left: 2.2em !important;
+    padding-right: 2.5em !important;
+  }
+
+  @include mixin.md {
+    padding-left: 2.5em !important;
+    padding-right: 2.5em !important;
+  }
+
+  @include mixin.lg {
+    padding-left: 8.5em !important;
+    padding-right: 8.5em !important;
+  }
+
+  @include mixin.xl {
+    padding-left: 12em !important;
+    padding-right: 12em !important;
+  }
+}
+
+.ant-pagination-item-active {
+  border-color: #000 !important;
+  background: #000 !important;
+
+  a {
+    color: #fff !important;
+  }
+}

@@ -1,0 +1,100 @@
+@use "../../Styles/mixin.scss";
+
+$primary-color: #49cd5e !default;
+
+.form-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 14em;
+  display: flex;
+  box-shadow: 0px 15px 10px -15px #1111110f;
+
+  .equal-sign-wrapper {
+    padding-top: 2.6em;
+  }
+
+  .form-item {
+    margin-inline-end: 0 !important;
+    flex: 1 0 14% !important;
+  }
+
+  .ant-form-item-label label::after {
+    content: "" !important;
+  }
+
+  .ant-select-selector {
+    height: 36px !important;
+    border-radius: 8px !important;
+    width: 100% !important;
+  }
+  .ant-select-selector,
+  .ant-input-number {
+    height: 35px !important;
+  }
+
+  .ant-btn-primary {
+    background-color: $primary-color;
+  }
+
+  .ant-btn {
+    height: 37px !important;
+  }
+
+  .login-form-button {
+    width: 100%;
+  }
+  .align-button {
+    margin-inline-end: 0;
+  }
+
+  @include mixin.xs {
+    padding: 2.5em 2.5em !important;
+  }
+
+  @include mixin.sm {
+    padding: 2.5em 2.5em !important;
+  }
+
+  @include mixin.md {
+    padding: 3em 3em !important;
+  }
+
+  @include mixin.lg {
+    padding: 2em 10em !important;
+  }
+
+  @include mixin.xl {
+    padding: 2em 14em !important;
+  }
+
+  .ant-form {
+    @include mixin.xs {
+      flex-direction: column;
+      row-gap: 1em;
+    }
+
+    @include mixin.sm {
+      flex-direction: column;
+      row-gap: 1em;
+    }
+
+    @include mixin.md {
+      flex-direction: row;
+    }
+  }
+
+  .equal-sign-wrapper {
+    @include mixin.xs {
+      display: none;
+    }
+
+    @include mixin.sm {
+      display: none;
+    }
+
+    @include mixin.md {
+      display: inline;
+    }
+  }
+}
